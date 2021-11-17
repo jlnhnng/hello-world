@@ -1,0 +1,24 @@
+{% extends "master.html" %}
+
+{% block title %}Home{% endblock %}
+
+{% block body %}
+
+<p>This is a simple hello-world container made by <a href="https://github.com/jlnhnng">jlnhnng</a>.</p>
+
+<table>
+    <tr>
+        <td>Container Name&nbsp;</td>
+        <td>{{ hostname }}</td>
+    </tr>
+    <tr>
+        <td>Container IP</td>
+        <td>{{ ip }}</td>
+    </tr>
+    <tr>
+        <td>Time</td>
+        <td>{{ timestamp }}</td>
+    </tr>
+</table>
+
+{% endblock %}
