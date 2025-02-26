@@ -10,9 +10,8 @@ jobs:
   build-and-push:
     runs-on: ubuntu-latest
     permissions:
-      contents: write  
-      packages: write 
-      
+      packages: write
+
     steps:
     - name: Check out repository
       uses: actions/checkout@v3
@@ -36,9 +35,3 @@ jobs:
         push: true
         tags: ghcr.io/${{ github.actor }}/${{ env.REPO_NAME }}:latest
         platforms: linux/amd64,linux/arm64
-
-    - name: Create GitHub Release
-      uses: softprops/action-gh-release@v1
-      with:
-        tag_name: v1.0.${{ github.run_number }}
-        generate_release_notes: true
