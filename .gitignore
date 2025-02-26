@@ -1,0 +1,45 @@
+# Ignore Python bytecode
+__pycache__/
+*.py[cod]
+
+# Ignore virtual environment
+venv/
+.env/
+*.env
+
+# Ignore logs and database files
+*.log
+*.sqlite3
+
+# Ignore Docker artifacts
+dist/
+build/
+*.tar
+
+# Ignore dependency management
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Ignore IDE and editor-specific files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Ignore GitHub Actions workflow artifacts
+.github/workflows/*.log
+
+# Ignore Terraform state files
+.terraform/
+*.tfstate
+*.tfstate.backup
+
+# Ignore container build files
+docker-compose.override.yml
+
+# Ignore GitHub Pages artifacts
+/public/
+
+# Ignore unwanted system files
+.DS_Store
+Thumbs.db
